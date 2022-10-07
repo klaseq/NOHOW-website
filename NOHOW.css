@@ -1,0 +1,216 @@
+
+.centered {
+    text-align: center;
+}
+
+.domu-article{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px max-content;
+}
+
+.domu-article img {
+    width: 350px;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column: 2;
+    filter: grayscale(1);
+    margin-top: 50px;
+}
+
+body {
+    font: 14px "Poppins";
+    color: #414042;
+    background: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0 0 0;
+    min-height: 100vh;
+    min-width: 960px;
+}
+
+article {
+    flex: 1;
+    padding: 80px 50px;
+    background-color: rgb(206, 205, 205);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonts/Poppins/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+article header {
+    height: 100px;
+}
+
+article h1 {
+    margin: 0;
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid #891010;
+}
+article h2 {
+    font-size: 2.em;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    padding: 10px 0;
+    color: #00386b;
+    width: max-content;
+}
+
+article section p {
+    line-height: 1.8em;
+    margin-bottom: 1.5em;
+    line-height: 1.8em;
+}
+article section a {
+    color: #3a52a8;
+}
+
+#centrovac {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.reference-tlacitko{
+    background: #70B73A;
+    color: white;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+body > header {
+    height: 100px;
+    width: 100%;
+    background: rgb(106, 105, 105);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+#logo {
+    height: 40px;
+    margin: auto 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(pictures/logo.png) no-repeat;
+    background-size: 40px 40px;
+}
+
+#logo > * {
+    margin: 0 0 0 50px;
+}
+
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: white;
+}
+
+#logo span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#logo small {
+    font-size: 0.85em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0 25px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.3em;
+}
+
+nav ul a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul a:hover, .aktivni a {
+    background-color: rgb(120, 147, 210);
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.contact-button {
+    background: rgb(149, 71, 71);
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.contact-button:hover {
+    background: rgb(204, 103, 103);
+}
+
+.reference-tlacitko:hover {
+    filter: brightness(115%) contrast(85%);
+    border: 0;
+}
+
+footer {
+    height: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    background: #5a5163;
+    padding: 50px 0 0 0;
+    color: white;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+#members td {
+    width: 33%;
+    vertical-align: top;
+}
+
+.gigs li {
+    padding: 10px;
+    font-size: large;
+}
